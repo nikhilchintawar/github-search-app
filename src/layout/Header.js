@@ -27,16 +27,18 @@ const Header = () => {
                     context.user 
                     ?
                     (<NavItem>
-                        <NavLink tag={Link} to='/' className="text-white" >LogOut</NavLink>
+                        <NavLink 
+                         onClick={() => {context.setUser(null)}}
+                         className="text-white" >LogOut</NavLink>
                     </NavItem>)
                     :
                     (
                     <>
                     <NavItem>
-                        <NavLink tag={Link} to='/' className="text-white" >SignIn</NavLink>
+                        <NavLink tag={Link} to='/signin' className="text-white" >SignIn</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink tag={Link} to='/' className="text-white" >SignUp</NavLink>
+                        <NavLink tag={Link} to='/signup' className="text-white" >SignUp</NavLink>
                     </NavItem>
                     </>
                     )
