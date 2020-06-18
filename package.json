@@ -1,5 +1,6 @@
 {
   "name": "github-app",
+  "homepage": "https://nikhilchintawar.github.io/github-search-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "firebase": "^7.15.1",
+    "gh-pages": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -17,6 +19,8 @@
     "reactstrap": "^8.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

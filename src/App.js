@@ -38,7 +38,7 @@ function App() {
      <UserContext.Provider value={{user, setUser}}>
       <Header />
        <Switch>
-         <Route exact path="/" component={Home} />
+         <Route exact path="/github-search-app" component={Home} />
          <Route exact path="/signup" component={SignUp} />
          <Route exact path="/signin" component={SignIn} />
 
